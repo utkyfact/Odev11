@@ -1,0 +1,481 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px 0px 0px;
+    padding: 0px 0px 32px;
+}
+
+.brand{
+    margin-right: 10px;
+}
+
+.bg-image{
+    width: 450px;
+    height: 625px;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.kaybolanlar{
+    width: 500px;
+    height: 300px;
+    padding: 7px 0px 5px 0px;
+    
+}
+
+.bg-image img{
+    width: 100%;
+}
+
+.abs1{
+    width: 244px;
+    height: 538px;
+    position: absolute;
+    right: 0;
+    margin: 20px 55px 0px 0px;
+    /* visibility: visible;
+    z-index: 2;
+    transition-duration: 1.5s all;
+    transition-timing-function: ease-in;
+    vertical-align: baseline; */
+    /* opacity: 1; */
+    animation: abs1 12s ease-in normal infinite;
+    animation-delay: 2s;
+}
+
+.abs2{
+    width: 244px;
+    height: 538px;
+    position: absolute;
+    right: 0;
+    margin: 20px 55px 0px 0px;
+    /* visibility: visible;
+    transition-timing-function: ease-out;
+    transition-duration: 1.5s;
+    transition-property: opacity;
+    vertical-align: baseline; */
+    /* opacity: 0; */
+    animation: abs2 12s ease-in normal infinite;
+    animation-delay: 2s;
+}
+
+.abs3{
+    width: 244px;
+    height: 538px;
+    position: absolute;
+    right: 0;
+    margin: 20px 55px 0px 0px;
+    /* visibility: visible;
+    transition-timing-function: ease-out;
+    transition-duration: 1.5s;
+    transition-property: opacity;
+    vertical-align: baseline; */
+    /* opacity: 0; */
+    animation: abs3 12s ease-in normal infinite;
+    animation-delay: 2s;
+}
+
+.abs4{
+    width: 244px;
+    height: 538px;
+    position: absolute;
+    right: 0;
+    margin: 20px 55px 0px 0px;
+    /* visibility: visible;
+    transition-timing-function: ease-out;
+    transition-duration: 1.5s;
+    transition-property: opacity;
+    vertical-align: baseline; */
+    /* opacity: 0; */
+    animation: abs4 12s ease-in normal infinite;
+    animation-delay: 2s;
+}
+
+
+.genel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 42px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.ig-form{
+    border: 1px solid rgb(224, 224, 224);
+    width: 350px;
+    /* height: 420px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 10px;
+    border-radius: 1px;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 100%;
+}
+
+.ig-logo{
+    width: 174px;
+    height: 90px;
+    margin: 30px 0px 0px 0px;
+}
+
+.ig-logo img{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+.content label{
+    font-size: 13px;
+    position: absolute;
+    color: gray;
+    top: 0;
+    left: 10px;
+    line-height: 38px;
+}
+
+.content input{
+    width: 268px;
+    height: 37px;
+    padding: 7px;
+    font-size: 12px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+}
+
+.ilkdiv label{
+    pointer-events: none;
+    background-color: transparent;
+    transition: top 0.2s, font-size 0.2s;
+}
+
+.ikincidiv{
+    position: relative;
+}
+
+.ikincidiv label{
+    position: absolute;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+.ilkdiv input:focus{
+    outline: none;
+}
+
+.ikincidiv input:focus{
+    outline: none;
+}
+
+#pass:focus + label, #pass:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+}
+
+#isim:focus + label, #isim:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+}
+
+
+
+
+.face{
+    margin-top: 10px;
+}
+
+.sifre{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    width: 268px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CB5F9;
+    color: white;
+    
+}
+
+.cizgi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cizgi span{
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+.ciz{
+    border: 1px solid rgba(174, 174, 174, 0.298);
+    width: 100px;
+    margin: 15px;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon a{
+    text-decoration: none;
+}
+
+.icon .sifre{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.soru{
+    border: 1px solid rgb(224, 224, 224);
+    width: 350px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+
+.soru a{
+    text-decoration: none;
+    margin: 0px 0px 0px 5px;
+}
+
+.uyg-indir{
+    margin-top: 20px;
+}
+
+.gp{
+    width: 134px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.gp img{
+    width: 100%;
+}
+
+.mc{
+    width: 110px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.mc img{
+    width: 100%;
+}
+
+.enalt{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer .altyazi{
+    display: flex;
+    align-items: center;
+    
+}
+
+.altyazi a{
+    color: gray;
+    font-size: 14px;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.altyazi a:hover{
+    text-decoration: underline;
+}
+
+.altyazi span{
+    color: gray;
+    font-size: 14px;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+@keyframes abs1{
+    0%{
+        visibility: visible;
+        opacity: 1;
+    }
+    25%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    50%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    75%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes abs2{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    25%{
+        visibility: visible;
+        opacity: 1;
+    }
+    50%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    75%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 0;
+    }
+}
+
+@keyframes abs3{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    25%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    50%{
+        visibility: visible;
+        opacity: 1;
+    }
+    75%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes abs4{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    25%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    50%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    75%{
+        visibility: visible;
+        opacity: 1;
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media (max-width:875px) {
+    .brand{
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    
+
+    .genel{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .ig-form{
+        margin: 0;
+        padding: 0;
+    }
+    .ig-logo{
+        margin: 0;
+        padding: 0;
+    }
+    .content{
+        margin: 0;
+        padding: 0;
+    }
+    .face{
+        margin: 0px;
+    }
+    
+    .sifre{
+        margin: 10px;
+        
+    }
+    .ig-form{
+        border-color: white;
+    }
+
+    .soru{
+        border-color: white;
+    }
+
+     
+}
+
+@media (max-width:365px) {
+   
+}
+
+
+@media (max-width:270px) {
+    .enalt{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
